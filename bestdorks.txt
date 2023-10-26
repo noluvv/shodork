@@ -1,0 +1,61 @@
+Here is a list of the best Shodan queries/dorks I've discovered over time.
+
+# webcams in general, may or may not be password protected
+"webcam"
+
+# webcamxp cams. these are frequently open to viewing and not password protected
+"webcamxp"
+
+# self explanatory 
+"sexcam"
+
+# electronic billboards
+"Server: Prismview Player"
+
+# gas station pump controllers... yeah
+"in-tank inventory" port:10001
+
+# automatic license plate readers
+P372 "ANPR enabled"
+
+# voting machines. Murica, baby!
+"voter system serial" country:US
+
+# traffic light controllers... luckily (or unluckily if you're that type of person) they're pretty secure
+mikrotik streetlight
+
+# "lawlful" wiretaps
+"Cisco IOS" "ADVIPSERVICESK9_LI-M"
+
+# electric vehicle chargers 
+"Server: gSOAP/2.8" "Content-Length: 583"
+
+# tesla powerpack
+http.title:"Tesla PowerPack System" http.component:"d3" -ga3ca4f2
+
+# wind turbines
+http.title:"Nordex Control" "Windows 2000 5.0 x86" "Jetty/3.1 (JSP 1.1; Servlet 2.2; java 1.6.0_14)"
+
+# vehicle gps trackers
+"[1m[35mWelcome on console"
+
+# x-ray machines...
+"DICOM Server Response" port:104
+
+# gaugetech electrical meters
+"Server: EIG Embedded Web Server" "200 Document follows"
+
+# siemens industrial automation 
+"Siemens, SIMATIC" port:161
+
+# siemens hvac controllers
+"Server: Microsoft-WinCE" "Content-Length: 12581"
+
+# door/lock access controllers
+"HID VertX" port:4070
+
+# railroad management systems 
+"log off" "select the appropriate"
+
+
+Credit goes to https://github.com/jakejarvis for most of these.
